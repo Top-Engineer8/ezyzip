@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 2.7.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "FIREBASE_USE_EMULATOR": "TRUE"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "FIREBASE_USE_EMULATOR": "FALSE"
+      }
+    },
+    "production": {
+      "env": {
+        "FIREBASE_USE_EMULATOR": "FALSE"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
